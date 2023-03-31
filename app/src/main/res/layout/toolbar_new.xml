@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp"
+    android:background="#FF485BBE"
+    app:elevation="8dp"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <!--       ?attr/actionBarSize-->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/deliveryboy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:gravity="left"
+        android:text="Delivery Boy"
+        android:textColor="@color/white1"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <TextView
+        android:id="@+id/switchstatus"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="Inactive"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_15sdp" />
+
+    <Switch
+        android:id="@+id/switchbutton"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:elevation="@dimen/_20sdp"
+        android:layout_gravity="right"
+        android:layout_centerInParent="true"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
+
+
+</androidx.appcompat.widget.Toolbar>
